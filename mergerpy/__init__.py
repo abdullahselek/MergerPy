@@ -1,0 +1,1 @@
+from mergerpy import merger
