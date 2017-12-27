@@ -1,6 +1,19 @@
 #!/usr/bin/env python
 
+import sys
 from itertools import product
+
+__version__ =  "0.1"
+
+def full_version():
+    """Returns version of current mergerpy"""
+    from struct import calcsize
+    return "mergerpy {} on Python {} {}-bit, {}-bit unicodes".format(
+        __version__,
+        ".".join(str(i) for i in sys.version_info[:3]),
+        calcsize(b"P") * 8,
+        sys.maxunicode.bit_length(),
+    )
 
 def load_file(filename):
     """Loads given text file from directory into string lines"""
