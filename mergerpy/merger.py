@@ -41,3 +41,9 @@ def merge_input(input_array):
     merged_file.close()
     print('Merged file created successfully!')
     return True
+
+def main(filename):
+    """Main function which combines all three worker functions"""
+    lines = load_file(filename)
+    parsed_input = parse_input(lines)
+    return merge_input(parsed_input)
