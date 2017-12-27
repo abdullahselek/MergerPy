@@ -6,7 +6,7 @@ from itertools import product
 __version__ =  "0.1"
 
 def full_version():
-    """Returns version of current mergerpy"""
+    """Returns version of current mergerpy."""
     from struct import calcsize
     return "mergerpy {} on Python {} {}-bit, {}-bit unicodes".format(
         __version__,
@@ -16,7 +16,10 @@ def full_version():
     )
 
 def load_file(filename):
-    """Loads given text file from directory into string lines"""
+    """Loads given text file from directory into string lines.
+    Args:
+      filename (str): Input file name.
+    """
     with open(filename, 'r') as payload_file:
         lines = []
         for line in payload_file:
@@ -24,7 +27,10 @@ def load_file(filename):
         return lines
 
 def parse_input(lines):
-    """Parse given input array that contains string lines"""
+    """Parse given input array that contains string lines.
+    Args:
+      lines (array): String lines of array.
+    """
     parsed_input = []
     for line in lines:
         parsed_data = line.split()
@@ -32,7 +38,10 @@ def parse_input(lines):
     return parsed_input
 
 def merge_input(input_array):
-    """Merges concatanates given input array into lines of strings"""
+    """Merges concatanates given input array into lines of strings.
+    Args:
+      input_array (array): Parsed string of array.
+    """
     product(*input_array)
     with open('merged.txt', 'w') as merged_file:
         for input_list in product(*input_array):
@@ -43,7 +52,10 @@ def merge_input(input_array):
     return True
 
 def main(filename):
-    """Main function which combines all three worker functions"""
+    """Main function which combines all three worker functions.
+    Args:
+      filename (str): Input file name.
+    """
     lines = load_file(filename)
     parsed_input = parse_input(lines)
     return merge_input(parsed_input)
