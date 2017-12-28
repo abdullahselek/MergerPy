@@ -1,6 +1,15 @@
 MergerPy
 ========
 
+.. image:: https://img.shields.io/pypi/v/mergerpy.svg
+    :target: https://pypi.python.org/pypi/mergerpy/
+
+.. image:: https://img.shields.io/pypi/pyversions/mergerpy.svg
+    :target: https://pypi.org/project/mergerpy
+
+.. image:: https://readthedocs.org/projects/mergerpy/badge/?version=latest
+    :target: http://mergerpy.readthedocs.org/en/latest/?badge=latest
+
 .. image:: https://codecov.io/gh/abdullahselek/MergerPy/branch/master/graph/badge.svg
     :target: https://codecov.io/gh/abdullahselek/MergerPy
 
