@@ -20,7 +20,7 @@ MergerPy
 |                                Linux                                      |                                       Windows                                      |
 +===========================================================================+====================================================================================+
 | .. image:: https://travis-ci.org/abdullahselek/MergerPy.svg?branch=master | .. image:: https://ci.appveyor.com/api/projects/status/5ci6rtapw64u0n1i?svg=true   |
-|    :target: https://travis-ci.org/abdullahselek/MergerPy                  |    :target: https://ci.appveyor.com/project/abdullahselek/Mergerpy                 |
+|    :target: https://travis-ci.org/abdullahselek/MergerPy                  |    :target: https://ci.appveyor.com/project/abdullahselek/MergerPy                 |
 +---------------------------------------------------------------------------+------------------------------------------------------------------------------------+
 
 Introduction
