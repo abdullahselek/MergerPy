@@ -40,7 +40,7 @@ setup(
     install_requires=[],
     setup_requires=['pytest-runner'],
     tests_require=['pytest'],
-    keywords='merge strings, concatenate keywords',
+    keywords='merge strings, concatenate keywords, bitcoin wallets',
     classifiers=[
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
