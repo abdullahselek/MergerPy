@@ -98,6 +98,13 @@ With using only one function::
 
     merger.main('tests/resources/sample.txt')
 
+Command Line Usage
+==================
+
+With ``--input`` parameter::
+
+    python mergerpy.py --input tests/resources/sample.txt
+
 Licence
 -------
 
