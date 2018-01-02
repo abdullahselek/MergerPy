@@ -25,5 +25,8 @@ class MergerTest(unittest.TestCase):
         merged_file_created = merger.merge_input(parsed_input)
         self.assertTrue(merged_file_created)
 
+    def test_process(self):
+        self.assertTrue(merger.process('tests/resources/sample.txt'))
+
     def test_main(self):
         self.assertTrue(merger.main('tests/resources/sample.txt'))

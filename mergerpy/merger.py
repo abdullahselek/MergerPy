@@ -51,8 +51,17 @@ def merge_input(input_array):
     print('Merged file created successfully!')
     return True
 
+def process(filename):
+    """Merges texts given file from directory into a new file.
+    Args:
+      filename (str): Input file name.
+    """
+    lines = load_file(filename)
+    parsed_input = parse_input(lines)
+    return merge_input(parsed_input)
+
 def main(filename):
-    """Main function which combines all three worker functions.
+    """Main function which combines all three worker functions for command line interface.
     Args:
       filename (str): Input file name.
     """
