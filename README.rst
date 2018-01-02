@@ -96,7 +96,7 @@ With using only one function::
 
     from mergerpy import merger
 
-    merger.main('tests/resources/sample.txt')
+    merger.process('tests/resources/sample.txt')
 
 Command Line Usage
 ==================
