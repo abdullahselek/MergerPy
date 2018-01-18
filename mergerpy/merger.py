@@ -52,13 +52,17 @@ def merge_input(input_array):
     return True
 
 def process(filename):
-    """Merges texts given file from directory into a new file.
+    """Merges texts given file from directory into a new string.
     Args:
       filename (str): Input file name.
     """
     lines = load_file(filename)
     parsed_input = parse_input(lines)
-    return merge_input(parsed_input)
+    new_str = ''
+    for input_list in product(*parsed_input):
+        merged_str = ''.join(str(e) for e in input_list)
+        new_str += merged_str + ','
+    return new_str[:-1]
 
 def main(filename):
     """Main function which combines all three worker functions for command line interface.
