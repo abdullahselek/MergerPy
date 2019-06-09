@@ -27,7 +27,7 @@ Introduction
 ============
 
 This library provides a fast text concatenation from files. It works with Python versions from 2.7+ and Python 3.
-The main aim to create this library is to create new passwords from given files which contain tokens. Then you can 
+The main aim to create this library is to create new passwords from given files which contain tokens. Then you can
 use `btcrecover <https://github.com/gurnec/btcrecover>`_ to get your password back.
 
 Sample:
@@ -37,7 +37,7 @@ tokens.txt
 +------------+
 | A 1 e 2 a 3|
 +------------+
-| B s h i r  | 
+| B s h i r  |
 +------------+
 | E i 34 26 s|
 +------------+
@@ -92,7 +92,9 @@ To run the unit tests against a set of Python versions::
 Sample Usage
 ============
 
-With using only one function::
+With using only one function
+
+.. code:: python
 
     from mergerpy import merger
 
@@ -104,6 +106,10 @@ Command Line Usage
 With ``--input`` parameter::
 
     python mergerpy.py --input tests/resources/sample.txt
+
+ or if you have installed via ``pip``
+
+    python -m mergerpy --input tests/resources/sample.txt
 
 Licence
 -------
