@@ -105,10 +105,6 @@ Command Line Usage
 
 With ``--input`` parameter::
 
-    python mergerpy.py --input tests/resources/sample.txt
-
- or if you have installed via ``pip``
-
     python -m mergerpy --input tests/resources/sample.txt
 
 Licence
