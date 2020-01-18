@@ -26,7 +26,7 @@ MergerPy
 Introduction
 ============
 
-This library provides a fast text concatenation from files. It works with Python versions from 2.7+ and Python 3.
+This library provides a fast text concatenation from files. It works with Python versions from Python 3.x.
 The main aim to create this library is to create new passwords from given files which contain tokens. Then you can
 use `btcrecover <https://github.com/gurnec/btcrecover>`_ to get your password back.
 
