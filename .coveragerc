@@ -1,0 +1,4 @@
+[paths]
+source = mergerpy/
+[run]
+omit = mergerpy/__main__.py
